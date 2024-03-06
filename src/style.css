@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --height-header: 40px;
+}
+
+body {
+  background-color: #0b1416;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
+  /* overflow: hidden; */
+  overflow-y: hidden;
+  margin: 0;
+  scrollbar-gutter: stable;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: black;
+  border: none;
+  box-shadow: 1px 1px 1px gray;
+  margin: 0;
+  padding-left: 10px;
+}
+#container {
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  overflow-y: auto;
+  /* overflow: hidden; */
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+input:focus {
+  outline: none;
+}
+#search-container {
+  display: grid;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 100%;
+}
+img {
+  align-self: center;
+  height: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.card.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  height: var(--height-header);
+  width: 100%;
+}
+.card.container {
+  box-sizing: border-box;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  flex-basis: 250px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: white;
+  border: 2px solid #999999;
+}
+.card.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100%;
+  gap: 5px;
+  width: 100%;
+  height: calc(100% - var(--height-header));
+  background-color: #232323;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.row > div:first-child {
+  width: 180px;
+}
+.card.content > .info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.info {
+  justify-content: space-evenly;
+  margin-left: 20px;
+  gap: 3px;
+}
+.info > div:first-child {
+  font-size: 24px;
+}
+
+#data {
+  flex-direction: column;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: stretch;
+  justify-content: start;
+  gap: 5px;
+  width: 90%;
+  height: 100%;
+}
